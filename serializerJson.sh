@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
-#CloudTrail directory#
+#Json dmp directory#
 read -rp "Enter the full or relative path to the directory: " dirMasterJson
 #Validate the input path#
 if [[ ! -d "$dirMasterJson" ]]; then
-  echo "[ERROR] The directory '$cloudtrail_dir' does not exist or is not accessible."
+  echo "[ERROR] The directory '$dirMasterJson' does not exist or is not accessible."
   exit 1
 fi
 #Output file#
